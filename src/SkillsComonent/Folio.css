@@ -1,0 +1,154 @@
+/* Container Styling for Folio Big */
+.container-folio-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f0f0f0; Light background color */
+  padding: 20px;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Grid Container Styling */
+.grid-container {
+  height: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(to right, #8e44ad, #3498db); /* Gradient background */
+  padding: 10px; /* Optional padding for the grid */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Box Styling */
+.grid-container .box {
+  display: inline-block;
+  border: none;
+  padding: 15px 25px;
+  width: 150px;
+  /* height: 55px; */
+  border-radius: 12px;
+  transition: all 0.4s;
+  font-size: 1.2rem;
+  outline: nones;
+  color: white;
+  box-shadow: 0 9px #13828d;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(0, 128, 117)); /* Initial background gradient */
+}
+
+.box:hover{
+  box-shadow: 0 5px #666;
+  transform: translate(4px);
+}
+
+/* Box Hover Effect */
+.grid-container .box:hover {
+  background: linear-gradient(to top, rgb(0, 255, 200), maroon);
+}
+
+/* Container Folio Styling */
+.container-folio {
+  display: flex;
+  gap: 3rem;
+  background-color: #ecf0f1; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling for Range Input */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #e0e0e0;
+  outline: none;
+  position: relative;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  border-radius: 5px;
+  background: #e0e0e0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0;
+  /* Hide the thumb */
+  width: 0;
+}
+
+input[type="range"]::before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to top, rgb(31, 228, 159), rgb(0, 255, 229));
+  width: calc(var(--progress, 0%) * 1%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Flexbox Container for Range Inputs */
+.rangeContainer {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  width: 50vw;
+  background-color: #f9f9f9; /* Light background for range container */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Styling for Range Type Flexbox */
+.rangetype {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Styling for Text Input Section */
+.showTextInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 0.5;
+  width: 30%;
+}
+
+/* Styling for Ranges */
+.ranges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+/* Media Queries for Smaller Screens */
+@media(max-width:768px) {
+  .container-folio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #f5f5f5; /* Light background color for mobile */
+  }
+
+  .grid-container{
+    width: 340px;
+  }
+
+  .rangeContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+}

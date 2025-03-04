@@ -1,0 +1,71 @@
+
+
+.contact i{
+     font-size: 4rem;
+     font-weight: 600;   
+}
+
+.contact i:hover{
+    transform: scale(1.3);
+}
+
+.contact{
+    border: 2px solid black;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    text-decoration: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    animation: slideFromb 2s ease  forwards;
+}
+
+
+@keyframes slideFromb{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+
+
+.fa-solid{
+    color: green;
+}
+
+.fa-brands{
+    color: rgb(0, 85, 255);
+}
+
+.fa-regular{
+color: rgb(230, 0, 0);
+}
+
+.contact .head{
+    color: rgb(43, 128, 226);
+}
+
+.contact span{
+    font-size: 1.35rem;
+    color: black;
+    font-weight: 600;
+}
+
+.contactMe{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: darkblue;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

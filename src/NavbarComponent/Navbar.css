@@ -1,0 +1,121 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background gradient for the container */
+.containern {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Navbar Container Styling */
+.navbar {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* Navbar Navigation Styling */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Navbar Links Styling */
+.navbar-nav a {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Navbar Links */
+.navbar-nav a:hover {
+    color: #f39c12; /* Change to a yellow-orange color on hover */
+    cursor: pointer;
+}
+
+/* Hamburger Menu Styling (hidden by default) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger .line1.active {
+    transform: rotate(45deg) translateY(11px);
+    position: relative;
+    left: 5px;
+}
+
+.hamburger .line2.active {
+    opacity: 0;
+}
+
+.hamburger .line3.active {
+    transform: rotate(-45deg) translateY(-11px);
+    position: relative;
+    left: 5px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        /* flex-directison: column; */
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        background: #292929;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    .navbar-nav.open {
+        display: flex;
+    }
+
+    .navbar-nav a {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    /* Show Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+}
