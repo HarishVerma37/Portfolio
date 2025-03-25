@@ -4,19 +4,21 @@ export default function ContactTab() {
     let styles = {
         padding:"1.5rem",
         borderRadius:"1rem",
-        background:" linear-gradient(45deg, #87ceeb, #00bfff, #1e90ff)",
+        // background:" linear-gradient(45deg, #87ceeb, #00bfff, #1e90ff)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
-        gap: "3rem", // Optional: Uncomment if you want a gap between the items
-        // border:"2px solid black",
+        gap: "3rem", 
+        overflow:"hidden"
     
     };
 
+    
+
     return (
        <div className="container">
-        <h4 className="contactMe">Contact Me</h4>
+        {/* <h4 className="contactMe">Contact Me</h4> */}
          <div className="container" style={styles}>
             <Contact
                 link="tel:8400603016"

@@ -34,14 +34,14 @@ const projectsData = [
 const Projects = () => {
   return (
     <section className="projects">
-      <h2>My Projects</h2>
+      {/* <h2>My Projects</h2> */}
       <div className="projects-container">
         {projectsData.map((project) => (
           <div className="project-card" key={project.id}>
             <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <p><strong>Tech Stack:</strong> {project.techStack}</p>
+            <p><strong>Tech Stack:</strong><br /> {project.techStack}</p>
             <div className="project-links">
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href={project.liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>

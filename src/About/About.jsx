@@ -8,7 +8,7 @@ export default function About() {
     return (
        <div className="container aboutc">
          <div className="containerc header-container">
-            <h4 className="aboutMe">About Me</h4>
+            {/* <h4 className="aboutMe">About Me</h4> */}
             <h3 className="aboutTitle">Harish Verma</h3>
             <h3 className="mern">
                 MERN Stack Developer | <span className="js">JavaScript</span> | Full-Stack Web Developer

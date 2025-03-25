@@ -27,10 +27,7 @@ function App() {
       element:
         <div>
           <Navbar />
-          <br /><br /> <br /><br />
-          {/* <Carousel /> */}
           <Projects />
-       
         </div>
     },
 
@@ -59,7 +56,7 @@ function App() {
       element:
         <div>
           <Navbar />
-          <Title Title="Skills" />
+          {/* <Title Title="Skills" /> */}
           <Folio />
         </div>
     }

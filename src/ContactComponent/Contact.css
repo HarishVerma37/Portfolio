@@ -10,19 +10,19 @@
 }
 
 .contact{
-    border: 2px solid black;
-    width: 370px;
+    border: 1px solid black;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1rem;
     text-decoration: none;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background-color: white;
-    animation: slideFromb 2s ease  forwards;
+    animation: slideFromb 1s ease  forwards;
 }
 
 
