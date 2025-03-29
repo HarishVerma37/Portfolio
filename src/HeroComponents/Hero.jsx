@@ -3,36 +3,48 @@ import { Link } from 'react-router-dom'; // Import Link for internal navigation
 import "./Hero.css"
 export default function Hero() {
     return (
-        <div className="container" style={{ display: "flex" }}>
-            <div className="main-section">
-                <div className="content-left">
-                    <h2 className="title">Hii , I,m MERN Stack Developer</h2>
-                    <p className="desc">
+        <>
+
+        <div className='home-container'>
+           <div className='desc-container-top'>
+             <div className='desc-container'>
+                <div className='desc-top-headings'>
+                    <h4> Welcome to my feed </h4>
+                    <h3> Hello, I'm a <span className='text-mern'>MERN Stack Developer</span> </h3>
+                </div>
+                <p className="desc">
                         I am a passionate MERN stack developer with experience in building dynamic, responsive, and scalable web applications. In my portfolio, I showcase a variety of projects that leverage MongoDB, Express.js, React.js, and
-                        Node.js to create powerful, full-stack solutions. Here's an overview of my key projects and technologies used:
-                    </p>
+                        Node.js to create powerful, full-stack solutions. 
+                </p>
+                <div className='current-status-container'>
 
+            <div className='current-status'>
+                <h4>Current working on</h4>
+                <div className='icons-parent'>
 
-                    <div className="btn-group">
-
-                        <Link to="https://www.linkedin.com/in/harishverma37" className="resume-link">
-                        Follow
-                        </Link>
-
-                        <Link to="/resume" className="resume-link">
-                            Resume
-                        </Link>
-                    </div>
-
+                    <img src='mongodb.png' />
+                    <img src='expressjs.png' />
+                    <img src='reactjs.png' />
+                    <img src='nodejs.png' />
+                    {/* <i class="fa-solid fa-leaf"></i>
+                    <i class="fas fa-server"></i>
+                    <i class="fas fa-code"></i>
+                    <i class="fab fa-node-js"></i> */}
                 </div>
-
-                <div className="content-right">
-                    <div className="imageContainner">
-                        <img src="src/assets/harish.jpg" alt="" />
-                    </div>
-                </div>
-
             </div>
+            </div>
+            </div>
+            
+           </div>
+
+            <div className="image-profile-container">
+                <div className='image-profile'>
+                    <div className='image-backgound'></div>
+                    <img src="harish-removebg-preview.png" alt="" />
+                </div>
+            </div>
+
         </div>
+        </>
     );
 }
