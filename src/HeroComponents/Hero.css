@@ -116,3 +116,27 @@
 .current-status .icons-parent img {
     width: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .home-container {
+       flex-direction: column;  
+    }
+
+
+    .current-status-container {
+        justify-content: start;
+    }
+    
+    .desc-container-top .desc-container h3 {
+        line-height: 40px;
+    }
+    
+    
+    .desc-container-top {
+        border-bottom: 10px solid rgb(150, 149, 230);
+        border-bottom-right-radius: 20px;
+        /* box-shadow: -2px 5px 2px black; */
+        margin-bottom: 60px;
+    }
+}
