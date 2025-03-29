@@ -1,108 +1,118 @@
-.main-section{
-    margin: 0 auto;
-    max-width: 1280px;
+.home-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 2rem 0;
+}
+
+.image-profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-profile {
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background: #b6e1fc; */
+    background: linear-gradient(to bottom, transparent, #b6e1fc, white);
+    box-shadow: 5px 5px 10px #4e6beb;
+    position: relative;
+}
+.image-profile img {
+    width: 100%;
+    z-index: 20 !important;
+    transform: scale(1.05) translate(0, 10px); 
+    position: relative;
+
+}
+
+.image-profile .image-backgound {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 13%;
+    background: linear-gradient(to bottom, #621ba5, transparent, transparent);;
+    width: 300px;
+    height: 350px;
+    z-index: 1;
+    border-top-right-radius: 90%;
+    border-top-left-radius: 180%;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 50%;
+    filter: blur(10px);
+}
+
+.desc-container-top {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-mern {
+    background: rgb(163, 22, 244);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.desc-top-headings {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 10px;
 }
-
-
-.content-left{
-    text-align: center;
-    animation: slideFromLeft 1s ease  forwards;
-    opacity: 0;
+.desc-container-top {
+    border-bottom: 10px solid rgb(150, 149, 230);
+    border-bottom-right-radius: 20px;
+    /* box-shadow: -2px 5px 2px black; */
 }
-
-@keyframes slideFromLeft{
-0%{
-    opacity: 0;
-    transform: translateX(-100%);
-}
-100%{
-    opacity: 1;
-    transform: translateX(0);
-}
-}
-
-.title{
-    font-size: 2.3rem;
-    padding: 1.1rem;
-}
-
-p{
-    color: grey;
-    font-size: 1.13rem;
-}
-
-.btn-group{
-    margin-top: 2rem;
+.desc-container-top .desc-container {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 11px;
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 2rem;
-}
-.btn-group a{
-text-decoration: none;
-border: none;
-border-radius: 0.375rem;
-background-color: blueviolet;
-padding: 0.75rem 1.5rem;
-font-size: 1rem;
-font-weight: 600;
-color: white;
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    padding: 5rem;
 }
 
+.desc-container-top .desc-container h4 {
+    font-size: 14px;
+}
 
-.content-right{
+.desc-container-top .desc-container h3 {
+    font-size: 19px;
+}
+
+.current-status-container {
+    /* border: 2px solid black; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+}
+.current-status {
+    /* border: 2px solid red; */
+    background: #ddeffa;
+    padding: 10px;
+    border-radius: 10px;
+}
+.current-status .icons-parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 }
 
-.imageContainner{
-    overflow: hidden;
-    border-radius: 0.625rem;
-    box-shadow: 0px 4px 8px rgb(0, 128, 122);
-    height: 50vh;
+.current-status .icons-parent img {
+    width: 1.5rem;
 }
-
-.imageContainner img{
-height: 100%;
-width: 100%;
-}
-
-
-@media screen and (min-width:768px) {
-    .main-section{
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .content-left{
-        max-width: 50%;
-        text-align: left;
-    }
-
-    .title{
-        padding-left: 0;
-        font-size: 3.5rem;
-    }
-
-    .btn-group{
-        justify-content: flex-start;
-        padding-left: 0;
-    }
-
-    .imageContainner{
-        height: 67vh;
-    }
-
-    .desc{
-        font-size: 1rem;
-        /* width: 75%; */
-    }
-}
-
