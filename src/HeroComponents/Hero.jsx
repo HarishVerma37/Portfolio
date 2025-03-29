@@ -9,8 +9,8 @@ export default function Hero() {
            <div className='desc-container-top'>
              <div className='desc-container'>
                 <div className='desc-top-headings'>
-                    <h4> Welcome to my feed </h4>
-                    <h3> Hello, I'm a <span className='text-mern'>MERN Stack Developer</span> </h3>
+                    <h4> Welcome to my <span className='feed-text'>feed</span> </h4>
+                    <h3> <span className='hello-text'>Hello,</span> I'm a <span className='text-mern'>MERN Stack Developer</span> </h3>
                 </div>
                 <p className="desc">
                         I am a passionate MERN stack developer with experience in building dynamic, responsive, and scalable web applications. In my portfolio, I showcase a variety of projects that leverage MongoDB, Express.js, React.js, and
