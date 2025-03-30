@@ -19,13 +19,16 @@ export default function ContactTab() {
     return (
         <div>
             <div className="container" style={styles}>
-                <fieldset
+                <div
                     style={{
                         width: "80%",
                         borderRadius: "1rem",
                          background: "linear-gradient(135deg, #f9a8d4,rgb(74, 197, 222))", 
                         boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)", 
-                        borderBottom:"7px solid blue"
+                        borderBottom:"7px solid blue",
+                        borderLeft:"5px solid red",
+                        borderRight:"5px solid green",
+                        padding:"0.5rem",
                     }}
                 >
                     <Contact
@@ -57,7 +60,7 @@ export default function ContactTab() {
                             top: "50px"
                         }}
                     />
-                </fieldset>
+                </div>
             </div>
         </div>
     );
