@@ -5,7 +5,6 @@ export default function ContactTab() {
     let styles = {
         padding: "2rem",
         borderRadius: "1rem",
-        // background: "linear-gradient(135deg, #f9a8d4, #4ade80)", // Adding a gradient background
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -28,7 +27,6 @@ export default function ContactTab() {
                         borderBottom:"7px solid blue",
                         borderLeft:"5px solid red",
                         borderRight:"5px solid green",
-                        padding:"0.5rem",
                     }}
                 >
                     <Contact
