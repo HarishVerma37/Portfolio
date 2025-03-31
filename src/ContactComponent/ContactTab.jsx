@@ -18,17 +18,7 @@ export default function ContactTab() {
     return (
         <div>
             <div className="container" style={styles}>
-                <div
-                    style={{
-                        width: "80%",
-                        borderRadius: "1rem",
-                         background: "linear-gradient(135deg, #f9a8d4,rgb(74, 197, 222))", 
-                        boxShadow: "0 10px 20px rgba(0, 0, 0, 0.1)", 
-                        borderBottom:"7px solid blue",
-                        borderLeft:"5px solid red",
-                        borderRight:"5px solid green",
-                    }}
-                >
+                <div className="resp">
                     <Contact
                         link="tel:8400603016"
                         icon={<i className="fa-solid fa-phone"></i>}
