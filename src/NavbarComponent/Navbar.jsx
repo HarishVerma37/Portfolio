@@ -86,7 +86,7 @@ export default function Navbar() {
 
         {/* Navbar Links */}
         <div className={`navbar-nav ${menuOpen ? "open" : ""}`}>
-          <NavLink to="/" className="navbar-brand">Home</NavLink>
+          <NavLink to="/" className="navbar-brand" onClick={toggleMenu}>Home</NavLink>
           <NavLink to="/Skills" onClick={toggleMenu}>Skills</NavLink>
           <NavLink to="/projects" onClick={toggleMenu}>Projects</NavLink>
           <NavLink to="/About" onClick={toggleMenu}>About</NavLink>
