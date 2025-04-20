@@ -19,7 +19,7 @@ export default function Hero() {
                 <div className='current-status-container'>
 
             <div className='current-status'>
-                <h4>Current working on</h4>
+                <h4>Currently working on</h4>
                 <div className='icons-parent'>
 
                     <img src='mongodb.png' />
